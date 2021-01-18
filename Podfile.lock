@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Swinject (2.7.1)
+  - VK-ios-sdk (1.6.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - Swinject
+  - VK-ios-sdk (= 1.6.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Swinject
+    - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  VK-ios-sdk: 104a8bc259199fb1fc621c1c93d7a9a6befb4ca0
+
+PODFILE CHECKSUM: c216f01634506f7783552c147e181f9d870defca
+
+COCOAPODS: 1.10.0

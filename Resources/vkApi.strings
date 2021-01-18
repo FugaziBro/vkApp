@@ -1,0 +1,13 @@
+/* 
+  vkApi.strings
+  VkNews
+
+  Created by Pyretttt on 25.12.2020.
+  Copyright © 2020 Бакулин Семен Александрович. All rights reserved.
+*/
+
+"scheme" = "https";
+"host" = "api.vk.com";
+"version" = "5.126";
+"newsFeed" = "/method/newsfeed.get";
+"appId" = "7663895";
