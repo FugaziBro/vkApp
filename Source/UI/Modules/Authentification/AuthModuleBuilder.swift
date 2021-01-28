@@ -10,6 +10,7 @@ import UIKit
 import Swinject
 
 final class AuthModuleBuilder{
+    
     //MARK: - Properties
     
     private let resolver: Resolver

@@ -9,6 +9,7 @@
 import UIKit
 
 struct SpinnerAnimator {
+   
     //MARK: - Propeties
     
     private let initialView: UIView

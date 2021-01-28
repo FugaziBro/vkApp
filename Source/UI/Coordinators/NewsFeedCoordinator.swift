@@ -10,7 +10,9 @@ import UIKit
 import Swinject
 
 final class NewsFeedCoordinator: Coordinatable {
+    
     //MARK: - Properties
+    
     var childCoordinators: [Coordinatable] = []
     private let navigationController: UINavigationController
     private let resolver: Resolver

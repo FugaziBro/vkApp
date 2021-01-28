@@ -10,13 +10,15 @@ import UIKit
 import Swinject
 
 final class MainCoordinator: Coordinatable{
-    
+   
     //MARK: - Properties
+    
     var childCoordinators: [Coordinatable] = []
     private let navigationController: UINavigationController
     private let resolver: Resolver
     
-    //MARK: -Methods
+    //MARK: - Methods
+    
     init(nav: UINavigationController, resolver: Resolver){
         self.navigationController = nav
         self.resolver = resolver

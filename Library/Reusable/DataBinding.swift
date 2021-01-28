@@ -10,8 +10,11 @@ import Foundation
 
 //MARK: - Implements reactive behavior on value types changes
 class DataBinding<T>{
+    
     typealias Callback = (T)->()
+    
     //MARK: - Propeties
+    
     public var value: T {
         didSet{
             for action in callbacks{ action(value) }

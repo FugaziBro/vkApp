@@ -39,6 +39,7 @@ public class FeedItem: Decodable{
     public let views: CountableItem
     
     //MARK: - Mapped
+    
     public var groupName: String?
     public var imageSource: String?
 }

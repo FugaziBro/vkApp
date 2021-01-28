@@ -9,6 +9,7 @@
 import UIKit
 
 class ImageFlyweight{
+    
     private var images = [String: UIImage]()
     
     public func getImage(for source: String)->UIImage? {

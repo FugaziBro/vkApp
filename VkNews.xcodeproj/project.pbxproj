@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0112E7D825C0679100BA1BAF /* vkNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0112E7D625C0679100BA1BAF /* vkNews.xcdatamodeld */; };
 		0126994625A994DB000C2CA1 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126994525A994DB000C2CA1 /* CellState.swift */; };
 		0127FB64259CCA64009D22F5 /* RequestConfigEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127FB63259CCA64009D22F5 /* RequestConfigEntities.swift */; };
 		0127FB92259CD5B4009D22F5 /* Image+NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127FB91259CD5B4009D22F5 /* Image+NavigationItem.swift */; };
@@ -26,9 +27,11 @@
 		016A8F012596389500516C72 /* NewsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A8F002596389500516C72 /* NewsRootView.swift */; };
 		016A8F5325964AED00516C72 /* SpinnerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A8F5225964AED00516C72 /* SpinnerAnimator.swift */; };
 		016AB2B32594CF0000F5CF92 /* DataBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016AB2B22594CF0000F5CF92 /* DataBinding.swift */; };
+		017153A625C1A3FB005E8555 /* VkNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017153A525C1A3FB005E8555 /* VkNewsTests.swift */; };
+		017153B025C1A411005E8555 /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017153AF25C1A411005E8555 /* DataStoreTests.swift */; };
 		017854F82597863C003E30A1 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017854F72597863C003E30A1 /* DataFetcher.swift */; };
-		017854FB25978645003E30A1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017854FA25978645003E30A1 /* Store.swift */; };
-		0178552B25978862003E30A1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178552A25978862003E30A1 /* DataStore.swift */; };
+		017854FB25978645003E30A1 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017854FA25978645003E30A1 /* PersistentStore.swift */; };
+		0178552B25978862003E30A1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178552A25978862003E30A1 /* CoreDataStack.swift */; };
 		0178554125978CE4003E30A1 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178554025978CE4003E30A1 /* DataParser.swift */; };
 		0178554E2597A462003E30A1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0178554D2597A462003E30A1 /* .gitignore */; };
 		01795AB4259514680023FF73 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01795AB3259514680023FF73 /* NewsFeedViewModel.swift */; };
@@ -59,7 +62,18 @@
 		410D064811CE9C964A2069F7 /* Pods_VkNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C9A35C0DF9AFC9B86BC30A /* Pods_VkNews.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		017153A825C1A3FB005E8555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD8086525617EC700CAFCBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AD8086C25617EC700CAFCBA;
+			remoteInfo = VkNews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0112E7D725C0679100BA1BAF /* vkNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vkNews.xcdatamodel; sourceTree = "<group>"; };
 		0126994525A994DB000C2CA1 /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
 		0127FB63259CCA64009D22F5 /* RequestConfigEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfigEntities.swift; sourceTree = "<group>"; };
 		0127FB91259CD5B4009D22F5 /* Image+NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+NavigationItem.swift"; sourceTree = "<group>"; };
@@ -79,9 +93,13 @@
 		016A8F002596389500516C72 /* NewsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRootView.swift; sourceTree = "<group>"; };
 		016A8F5225964AED00516C72 /* SpinnerAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerAnimator.swift; sourceTree = "<group>"; };
 		016AB2B22594CF0000F5CF92 /* DataBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBinding.swift; sourceTree = "<group>"; };
+		017153A325C1A3FB005E8555 /* VkNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		017153A525C1A3FB005E8555 /* VkNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkNewsTests.swift; sourceTree = "<group>"; };
+		017153A725C1A3FB005E8555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017153AF25C1A411005E8555 /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
 		017854F72597863C003E30A1 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
-		017854FA25978645003E30A1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		0178552A25978862003E30A1 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		017854FA25978645003E30A1 /* PersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
+		0178552A25978862003E30A1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0178554025978CE4003E30A1 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		0178554D2597A462003E30A1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		01795AB3259514680023FF73 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +135,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		017153A025C1A3FB005E8555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AD8086A25617EC700CAFCBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +198,16 @@
 				2ACB9F3D2564E251001F617A /* NewsFeed */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		017153A425C1A3FB005E8555 /* VkNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				017153A525C1A3FB005E8555 /* VkNewsTests.swift */,
+				017153A725C1A3FB005E8555 /* Info.plist */,
+				017153AF25C1A411005E8555 /* DataStoreTests.swift */,
+			);
+			path = VkNewsTests;
 			sourceTree = "<group>";
 		};
 		01795A87259511AD0023FF73 /* Reusable */ = {
@@ -248,7 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				01AA51DC25A712C0000A60FD /* Protocols */,
-				0178552A25978862003E30A1 /* DataStore.swift */,
+				0178552A25978862003E30A1 /* CoreDataStack.swift */,
 			);
 			path = "Local Persistence";
 			sourceTree = "<group>";
@@ -278,7 +313,7 @@
 		01AA51DC25A712C0000A60FD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				017854FA25978645003E30A1 /* Store.swift */,
+				017854FA25978645003E30A1 /* PersistentStore.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -338,6 +373,7 @@
 			children = (
 				2AD8087925617EC900CAFCBA /* Assets.xcassets */,
 				016A8EEF259632D000516C72 /* vkApi.strings */,
+				0112E7D625C0679100BA1BAF /* vkNews.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -411,6 +447,7 @@
 				2AD8086F25617EC700CAFCBA /* Source */,
 				01AA51D225A70FE3000A60FD /* Library */,
 				01ED72E1259DC21600D7039A /* Resources */,
+				017153A425C1A3FB005E8555 /* VkNewsTests */,
 				2AD8086E25617EC700CAFCBA /* Products */,
 				7DA73988744972AA022713EC /* Pods */,
 				2A534D2AA5052CA10150EB85 /* Frameworks */,
@@ -421,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD8086D25617EC700CAFCBA /* VkNews.app */,
+				017153A325C1A3FB005E8555 /* VkNewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,6 +485,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		017153A225C1A3FB005E8555 /* VkNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017153AC25C1A3FB005E8555 /* Build configuration list for PBXNativeTarget "VkNewsTests" */;
+			buildPhases = (
+				0171539F25C1A3FB005E8555 /* Sources */,
+				017153A025C1A3FB005E8555 /* Frameworks */,
+				017153A125C1A3FB005E8555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017153A925C1A3FB005E8555 /* PBXTargetDependency */,
+			);
+			name = VkNewsTests;
+			productName = VkNewsTests;
+			productReference = 017153A325C1A3FB005E8555 /* VkNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2AD8086C25617EC700CAFCBA /* VkNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AD8088125617EC900CAFCBA /* Build configuration list for PBXNativeTarget "VkNews" */;
@@ -472,10 +528,14 @@
 		2AD8086525617EC700CAFCBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Бакулин Семен Александрович";
 				TargetAttributes = {
+					017153A225C1A3FB005E8555 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2AD8086C25617EC700CAFCBA;
+					};
 					2AD8086C25617EC700CAFCBA = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -495,11 +555,19 @@
 			projectRoot = "";
 			targets = (
 				2AD8086C25617EC700CAFCBA /* VkNews */,
+				017153A225C1A3FB005E8555 /* VkNewsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		017153A125C1A3FB005E8555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AD8086B25617EC700CAFCBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,6 +625,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0171539F25C1A3FB005E8555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017153A625C1A3FB005E8555 /* VkNewsTests.swift in Sources */,
+				017153B025C1A411005E8555 /* DataStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AD8086925617EC700CAFCBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,7 +648,7 @@
 				2A50CF252566DC43008C1C5D /* FeedResponses.swift in Sources */,
 				013AC49B25A73C2A00448483 /* Visitor.swift in Sources */,
 				2AD8087125617EC700CAFCBA /* AppDelegate.swift in Sources */,
-				017854FB25978645003E30A1 /* Store.swift in Sources */,
+				017854FB25978645003E30A1 /* PersistentStore.swift in Sources */,
 				0127FB64259CCA64009D22F5 /* RequestConfigEntities.swift in Sources */,
 				01B7D673259B73FE0016F97E /* RequestConfig.swift in Sources */,
 				013AC4A225A73CF200448483 /* MapperVisitor.swift in Sources */,
@@ -590,12 +667,13 @@
 				01795AB4259514680023FF73 /* NewsFeedViewModel.swift in Sources */,
 				0126994625A994DB000C2CA1 /* CellState.swift in Sources */,
 				2A2CC9CF256440BB0037AF49 /* AuthService.swift in Sources */,
+				0112E7D825C0679100BA1BAF /* vkNews.xcdatamodeld in Sources */,
 				016A8F5325964AED00516C72 /* SpinnerAnimator.swift in Sources */,
 				01AA51E725A717F6000A60FD /* NetworkConstants.swift in Sources */,
 				0140CC30259260EA00301265 /* AuthModuleBuilder.swift in Sources */,
 				0140CC2D25925E6900301265 /* AuthViewModel.swift in Sources */,
 				013AC4ED25A76C8500448483 /* ImageFlyweight.swift in Sources */,
-				0178552B25978862003E30A1 /* DataStore.swift in Sources */,
+				0178552B25978862003E30A1 /* CoreDataStack.swift in Sources */,
 				2A6A0B1E256C132E0032A4A4 /* NewsFeedCell.swift in Sources */,
 				0178554125978CE4003E30A1 /* DataParser.swift in Sources */,
 				012A012D259BA1B8001135B1 /* NetworkFetcher.swift in Sources */,
@@ -610,6 +688,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		017153A925C1A3FB005E8555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AD8086C25617EC700CAFCBA /* VkNews */;
+			targetProxy = 017153A825C1A3FB005E8555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		2AD8087B25617EC900CAFCBA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -622,6 +708,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		017153AA25C1A3FB005E8555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VkNewsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.VkNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkNews.app/VkNews";
+			};
+			name = Debug;
+		};
+		017153AB25C1A3FB005E8555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VkNewsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.VkNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkNews.app/VkNews";
+			};
+			name = Release;
+		};
 		2AD8087F25617EC900CAFCBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -777,6 +905,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		017153AC25C1A3FB005E8555 /* Build configuration list for PBXNativeTarget "VkNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017153AA25C1A3FB005E8555 /* Debug */,
+				017153AB25C1A3FB005E8555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2AD8086825617EC700CAFCBA /* Build configuration list for PBXProject "VkNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -796,6 +933,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0112E7D625C0679100BA1BAF /* vkNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0112E7D725C0679100BA1BAF /* vkNews.xcdatamodel */,
+			);
+			currentVersion = 0112E7D725C0679100BA1BAF /* vkNews.xcdatamodel */;
+			path = vkNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2AD8086525617EC700CAFCBA /* Project object */;
 }

@@ -9,7 +9,9 @@
 import Foundation
 
 class NewsFeedMapperVisitor: Visitor{
+    
     //MARK: - Properties
+    
     private var groupsDict = [Int: [String]]()
     
     //MARK: - Methods

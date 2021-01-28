@@ -9,6 +9,7 @@
 import UIKit
 
 class AuthViewController: UIViewController {
+    
     //MARK: - Properties
     
     private let viewModel: AuthViewModel

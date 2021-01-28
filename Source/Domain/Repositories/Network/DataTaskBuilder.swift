@@ -9,10 +9,13 @@
 import Foundation
 
 final public class DataTaskBuilder{
+    
     //MARK: - Propeties
+    
     private let requestConfig: HttpConfig
     lazy var requestData: (queryParams:[String: String]?, body: [String: Any]?, headers: [String: String]?) = requestConfig.data.getData()
     private let TIMEOUT: TimeInterval = 7
+    
     //MARK: - Methods
     
     init(requestConfig: HttpConfig){

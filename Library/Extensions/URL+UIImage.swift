@@ -19,4 +19,5 @@ extension UIImage{
         
         self.init(data: data)
     }
+    
 }

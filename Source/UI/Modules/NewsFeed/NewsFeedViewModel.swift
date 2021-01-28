@@ -9,6 +9,7 @@
 import Foundation
 
 class NewsFeedViewModel{
+   
     //MARK: - Properties
 
     public let state: DataBinding<NewsFeedState>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Attachment" representedClassName=".Attachment" syncable="YES" codeGenerationType="class">
+        <attribute name="image" attributeType="Binary"/>
+        <relationship name="post" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="attachments" inverseEntity="Post"/>
+    </entity>
+    <entity name="GroupInfo" representedClassName=".GroupInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="groupName" attributeType="String" defaultValueString="Unknow"/>
+        <attribute name="image" attributeType="Binary"/>
+        <attribute name="sourceId" attributeType="String"/>
+        <relationship name="posts" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="groupInfo" inverseEntity="Post"/>
+    </entity>
+    <entity name="Post" representedClassName=".Post" syncable="YES" codeGenerationType="class">
+        <attribute name="comments" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="631209600" usesScalarValueType="NO"/>
+        <attribute name="likes" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reposts" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sourceId" attributeType="String"/>
+        <attribute name="views" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Attachment" inverseName="post" inverseEntity="Attachment"/>
+        <relationship name="groupInfo" maxCount="1" deletionRule="Nullify" destinationEntity="GroupInfo" inverseName="posts" inverseEntity="GroupInfo"/>
+    </entity>
+    <elements>
+        <element name="Attachment" positionX="44.9501953125" positionY="-297.706787109375" width="128" height="59"/>
+        <element name="GroupInfo" positionX="48.21514892578125" positionY="43.1708984375" width="128" height="89"/>
+        <element name="Post" positionX="393.9952392578125" positionY="-135.2642211914062" width="128" height="149"/>
+    </elements>
+</model>

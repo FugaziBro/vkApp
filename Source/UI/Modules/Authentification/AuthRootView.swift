@@ -9,6 +9,7 @@
 import UIKit
 
 class AuthRootView: UIView {
+    
     //MARK: - Properties
     
     private unowned let viewModel: AuthViewModel

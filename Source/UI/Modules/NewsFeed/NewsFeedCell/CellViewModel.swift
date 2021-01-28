@@ -9,13 +9,14 @@
 import Foundation
 
 class CellViewModel{
+    
     //MARK: - Propeties
     
     public let state = DataBinding<CellState>(value: .Initial)
     public let feedItem: FeedItem
     public let imageFlyweight: ImageFlyweight
 
-    //MARK: - Methosd
+    //MARK: - Methods
     
     public init(feedItem: FeedItem, imageFlyweight: ImageFlyweight){
         self.feedItem = feedItem

@@ -1,5 +1,5 @@
 //
-//  Store.swift
+//  PersistentStore.swift
 //  VkNews
 //
 //  Created by Pyretttt on 26.12.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol Store{
+public protocol PersistentStore{
     
 }

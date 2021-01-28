@@ -16,6 +16,7 @@ protocol AuthServiceDelegate: class {
 }
 
 final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate{
+   
     //MARK: - Properties
     
     private let vkSdk: VKSdk

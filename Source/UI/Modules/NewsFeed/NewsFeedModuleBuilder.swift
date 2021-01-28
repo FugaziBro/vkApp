@@ -10,6 +10,7 @@ import Foundation
 import Swinject
 
 class NewsFeedModuleBuilder{
+    
     //MARK: - Properties
     
     private let resolver: Resolver
@@ -21,7 +22,7 @@ class NewsFeedModuleBuilder{
     }
     
     func build()->UIViewController{
-        let store = resolver.resolve(Store.self)!
+        let store = resolver.resolve(PersistentStore?.self)!
         let vm = NewsFeedViewModel(fetcherFactory: resolver.resolve(((DataTaskBuilder)->DataFetcher).self)!, taskFactory: resolver.resolve(((HttpConfig)->DataTaskBuilder).self)!)
         let vc = NewsFeedViewController(viewModel: vm)
         

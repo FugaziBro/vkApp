@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsFeedViewController: UIViewController {
+    
     //MARK: - Properties
     
     private let viewModel: NewsFeedViewModel

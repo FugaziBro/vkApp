@@ -9,6 +9,7 @@
 import Foundation
 
 struct DateConverter{
+    
     private static let formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "h:mm, MMMM d"

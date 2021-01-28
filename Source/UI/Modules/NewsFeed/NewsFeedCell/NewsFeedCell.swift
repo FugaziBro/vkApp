@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class NewsFeedCell: UITableViewCell{
+    
     //MARK: - Outlets
     
     @IBOutlet weak var wrapperView: UIView!
@@ -25,6 +26,7 @@ class NewsFeedCell: UITableViewCell{
     @IBOutlet weak var extendButton: UIButton!
     
     @IBOutlet weak var photoGallery: UIStackView!
+    
     //MARK: - Properties
     
     private var viewModel: CellViewModel? {

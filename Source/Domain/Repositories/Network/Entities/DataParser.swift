@@ -9,6 +9,7 @@
 import Foundation
 
 public final class DataParser{
+    
     //MARK: - Propeties
     
     private var decoder: JSONDecoder = {

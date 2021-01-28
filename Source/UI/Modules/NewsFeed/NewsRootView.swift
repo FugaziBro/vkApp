@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsRootView: UIView{
+    
     //MARK: - Propeties
     
     private let viewModel: NewsFeedViewModel

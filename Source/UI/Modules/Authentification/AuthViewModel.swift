@@ -9,6 +9,7 @@
 import Foundation
 
 final class AuthViewModel {
+    
     //MARK: - Properties
     
     public let authService: AuthService

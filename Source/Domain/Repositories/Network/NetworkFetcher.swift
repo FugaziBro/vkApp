@@ -9,7 +9,9 @@
 import Foundation
 
 final class NetworkFetcher: DataFetcher{
+    
     //MARK: - Properties
+    
     private let taskBuilder: DataTaskBuilder
     private let parser: DataParser
     

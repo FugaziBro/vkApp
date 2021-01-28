@@ -9,8 +9,9 @@
 import UIKit
 
 struct GradientInstaller {
-    //MARK: - Propeties
     
+    //MARK: - Propeties
+
     private let initialView: UIView
     
     //MARK: - Methods
